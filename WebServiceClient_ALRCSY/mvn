@@ -1,0 +1,34 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< soi:WebServiceClient_ALRCSY >---------------------
+[INFO] Building WebServiceClient_ALRCSY 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ WebServiceClient_ALRCSY ---
+[WARNING] 
+com.sun.xml.ws.fault.ServerSOAPFaultException: Client received SOAP Fault from server: Fault occurred while processing. Please see the server log to find more detail regarding exact cause of the failure.
+    at com.sun.xml.ws.fault.SOAP11Fault.getProtocolException (SOAP11Fault.java:163)
+    at com.sun.xml.ws.fault.SOAPFaultBuilder.createException (SOAPFaultBuilder.java:98)
+    at com.sun.xml.ws.client.sei.StubHandler.readResponse (StubHandler.java:223)
+    at com.sun.xml.ws.db.DatabindingImpl.deserializeResponse (DatabindingImpl.java:176)
+    at com.sun.xml.ws.db.DatabindingImpl.deserializeResponse (DatabindingImpl.java:263)
+    at com.sun.xml.ws.client.sei.SyncMethodHandler.invoke (SyncMethodHandler.java:89)
+    at com.sun.xml.ws.client.sei.SyncMethodHandler.invoke (SyncMethodHandler.java:62)
+    at com.sun.xml.ws.client.sei.SEIStub.invoke (SEIStub.java:131)
+    at com.sun.proxy.$Proxy58.lock (Unknown Source)
+    at cinema.Program.main (Program.java:56)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.176 s
+[INFO] Finished at: 2021-03-05T21:57:29+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project WebServiceClient_ALRCSY: An exception occured while executing the Java class. Client received SOAP Fault from server: Fault occurred while processing. Please see the server log to find more detail regarding exact cause of the failure. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
